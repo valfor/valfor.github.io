@@ -1,0 +1,66 @@
+Loyalty Act (2016)
+Author: Onder Kelkia, Valfor Talleyrand
+
+
+An Act to provide for the better security of the region.
+
+BE IT ENACTED by the Emperor's most Supreme Majesty, by and with the advice and consent of the Commons and the Nobles, in concordance with the Constitution, in this Estates General assembled, as follows;
+
+Provisions
+
+I. Loyalty
+
+(1) A citizen of the Imperial Demesne shall be guilty of an offence if they provide direct or indirect assistance to any foreign state (be it a multi-regional alliance, a region, a sub-regional group or super-regional organisation) which subsequently fights the LKE in hostile military action if the citizen knew of the prospect of this foreign state engaging the LKE in battle or if the citizen could reasonably have been expected to have known of the prospect of this foreign state engaging the LKE in battle.
+
+(2) A citizen of the Imperial Demesne shall be guilty of an offence if they release information contained in the Imperial Council, the Oak Room, the Barracks, Habsburg Castle, the State Rooms, the Grand Audience Room, or any other forum publicly declared to be a confidential area by the Emperor, where such an action can be reasonably believed to be harmful to the interests of the LKE.
+
+(3) A citizen of the Imperial Demesne shall be guilty of an offence if they draft, submit, support or vote in favour of any proposed Security Council resolution which is opposed to the military operations of the LKE. It is a defence to this offence if the LKE WA Delegate has been directed by the Imperial Crown to vote in favour of the resolution concerned.
+
+(4) A citizen of the Imperial Demesne shall be guilty of an offence if they submit or campaign in support of any proposed Security Council resolution which is opposed to the military operations of an ally of the LKE. Subject to any specific additions or subtractions publicly declared in advance of the alleged offence by the Emperor, an ally of the LKE is defined (for the purposes of this section) as any foreign state with which the LKE enjoys an extant treaty which includes mutual defence provisions. It is a defence to this offence if the LKE WA Delegate has been directed by the Imperial Crown to vote in favour of the resolution concerned.
+
+(5) A citizen of the Imperial Demesne shall be guilty of an offence if they draft, submit, support or vote in favour of any proposed Security Council resolution which is critical of the LKE. It is a defence to this offence if the LKE WA Delegate has been directed by the Imperial Crown to vote in favour of the resolution concerned.
+
+(6) A citizen of the Imperial Demesne shall be guilty of an offence if they submit or campaign in support of any proposed Security Council resolution which is critical of an ally of the LKE. It is a defence to this offence if the resolution concerned is a condemnation resolution against an ally of the LKE which is welcomed by the ally concerned and does not criticise the LKE or any other ally of the LKE. It is a defence to this offence if the LKE WA Delegate has been directed by the Imperial Crown to vote in favour of the resolution concerned.
+
+(7) A citizen of the Imperial Demesne shall be guilty of an offence if they submit or campaign in support of any proposed Security Council resolution which praises a foreign state with which the LKE is at war or any individual's work on behalf of a foreign state with which the LKE is at war. It is a defence to this offence if the LKE WA Delegate has been directed by the Imperial Crown to vote in favour of the resolution concerned.
+
+(8) A citizen of the Imperial Demesne shall be guilty of an offence if they make any statement in the public domain which is untrue and can be reasonably interpreted as being contrary to the interests of the LKE.
+
+(9) A citizen of the Imperial Demesne shall be guilty of an offence if they purport to have standing to represent the LKE in discussions with citizens of other regions or in any public setting when they do not have lawful authority to represent the LKE.
+
+(10) A citizen of the Imperial Demesne shall be guilty of an offence if they encourage any individual or individuals within the LKE to join a foreign state. It is a defence to this offence if a citizen of the Imperial Demesne can demonstrate on the balance of probabilities that the actions allegedly constituting their offence occurred in a private setting and that the individual/s encouraged to join a foreign state held citizenship or equivalent status in a foreign state before they became a citizen of the Imperial Demesne.
+
+II. Proscribed Organisations
+
+(11) A citizen of the Imperial Demesne shall be guilty of an offence if they have citizenship or equvialent status in a proscribed organisation for a period of at least three days after they are aware that such an organisation is proscribed. A proscribed organisation may be a region, multi-regional alliance, super-regional organisation or sub-regional group. Proscribed organisations must be primarily external to the LKE. Where a multi-regional allaince is proscribed, this status extends to all its member-regions.
+
+(12) Organisations listed in Schedule I are proscribed from the passage of this statute. Any organisation on which the LKE declares war shall become a proscribed organisation from that point. The Estates General may proscribe additional organizations by a simple majority vote by both Chambers, subject to ratification by the Emperor. Moreover, the Emperor may proscribe additional organizations through a public notification, subject to ratification by both Chambers of the Estates General by a simple majority vote within 20 days of the issuance of the public notification. Organizations will become proscribed as soon as ratified or notified by the Emperor. Proscribed organizations may be revoked by the Emperor.
+
+(13) Waivers may be granted to allow citizens to be members of proscribed organisations. The existence of such a waiver having been in place during the time of the alleged offence or at the time of prosecution shall constitute a defence to an offence under this section. Waivers may be granted and revoked by the Emperor or the Lord High Steward.
+
+(14) It shall be a defence to any offence under this Act that an alleged offence was committed while undertaking authorised intelligence operations on behalf of the Imperial Intelligence Organisation that made necessary the commission of the specific offence.
+
+(15) In the event that a proscribed organisation has a successor organisation or undergoes an official name change, such an organisation shall be considered proscribed (unless the proscription is revoked). All disputes as to whether or not any entity is a successor to a proscribed organisation shall be determined by the Emperor before judgment is rendered in any criminal case which turns on such a dispute.
+
+(16) Opinions listed in Schedule II are proscribed from the LKE. Any organization advocating or showing support for a proscribed opinion (including, but not limited to, using its symbols or rhetoric) shall be considered to be included in Schedule I. Any nation in this situation shall be banned from the on-site region. Any debate on whether or not an organization, or a nation, shows support for a proscribed opinion shall be determined by the Emperor. A citizen of the Imperial Demesne shall be guilty of an offence if they advocate or show support for a proscribed opinion.
+
+Schedule I
+
+The Ascendancy
+Founderless Regions Alliance
+United Defenders League
+Yggdrasil
+The Order of the Grey Wardens
+The Kingdom of Great Britain
+The Empire of Mare Norstrum
+The Rejected Realms
+New Roman Imperium
+Auralia
+Founderless
+Osiris
+Victrix
+
+Schedule II
+
+Nazi
+Fascist
