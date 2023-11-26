@@ -9,25 +9,19 @@
 		margin: auto;
 		margin-top: 8%;
 		max-width: 50%;
-		background-color: #bbb;
 	}
 	a:visited {
 		color: blue;
 	}
-  form {
-    text-align: center;
-    align-content: center;
-    margin: auto;
-    max-width: 50%;
-  }
   input[type=text], input[type=number], select {
     width: 50%;
-    background-color: #bbb;
+    background-color: #ddd;
   }
   table {
   	margin: auto;
   	border-collapse: collapse;
   	width: 80%;
+  	background-color: #ddd;
   }
   td {
   	width: 50%;
@@ -44,28 +38,36 @@
 <body onload="getChamberRecord();">
 	<h2>Kantrias Electronic Voting and Legislative Assembly Record (KEVLAR)</h2>
 
-	<form id="form">
-		<label for="chamber">Chamber:</label><br>
-		<select id="chamber" name="chamber" onchange="getChamberRecord();">
-			<option value="KA">Kylian Assembly</option>
-			<option value="DC">Delphinium Court</option>
-		</select><br><br>
+	<table id="form">
+		<tr>
+		<td colspan="2">
+			<label for="chamber">Chamber:</label><br>
+			<select id="chamber" name="chamber" onchange="getChamberRecord();">
+				<option value="KA">Kylian Assembly</option>
+				<option value="DC">Delphinium Court</option>
+			</select><br><br>
+			</td>
+		</tr>
 
-		<label for="discord">Citizen (Discord):</label><br>
-		<select id="discord" name="discord" onchange="getPersonalRecord();">
-			<option></option>
-		</select><br><br>
+		<tr>
+			<td>
+				<label for="discord">Citizen (Discord):</label><br>
+				<select id="discord" name="discord" onchange="getPersonalRecord();">
+					<option></option>
+				</select>
+			</td>
 
-		<label for="prop">Proposal:</label><br>
-		<select id="prop" name="prop" onchange="getPropRecord();">
-			<option></option>
-		</select>
-	</form><br><br>
+			<td>
+				<label for="prop">Proposal:</label><br>
+				<select id="prop" name="prop" onchange="getPropRecord();">
+					<option></option>
+				</select>
+			</td>
+		</tr>
 
-	<table>
 	<tr>
-			<th><u>Personal Record</u></th>
-			<th><u>Proposal Record</u></th>
+			<th><br><u>Personal Record</u></th>
+			<th><br><u>Proposal Record</u></th>
 	</tr>
 	<tr>
 		<td id="personalRecordParagraph"></td>
