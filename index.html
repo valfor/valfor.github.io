@@ -1,0 +1,190 @@
+<html>
+<head>
+<title>Kantrias Voting Record</title>
+<meta charset="UTF-8">
+<meta name="author" content="Valfor Talleyrand">
+
+<style type="text/css">
+	body {
+		margin: auto;
+		margin-top: 8%;
+		max-width: 50%;
+	}
+	a:visited {
+		color: blue;
+	}
+  form {
+    text-align: center;
+    align-content: center;
+    margin: auto;
+    max-width: 50%;
+  }
+  input[type=submit] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  input[type=reset] {
+    background-color: #ff0000;
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  input[type=text], input[type=number], select {
+    width: 50%;
+  }
+  table {
+  	margin: auto;
+  	border-collapse: collapse;
+  	width: 80%;
+  }
+  td {
+  	width: 50%;
+  	margin: auto;
+  	vertical-align: top;
+  	text-align: center;
+  }
+  h2 {
+  	text-align: center;
+  }
+</style>
+</head>
+
+<body onload="getChamberRecord();">
+	<h2>Kantrias Legislative Voting Record (KALVR)</h2>
+
+	<form id="form">
+		<label for="chamber">Chamber:</label><br>
+		<select id="chamber" name="chamber" onchange="getChamberRecord();">
+			<option value="KA">Kylian Assembly</option>
+			<option value="DC">Delphinium Court</option>
+		</select><br><br>
+
+		<label for="discord">Citizen (Discord):</label><br>
+		<select id="discord" name="discord" onchange="getPersonalRecord();">
+			<option></option>
+		</select><br><br>
+
+		<label for="prop">Proposal:</label><br>
+		<select id="prop" name="prop" onchange="getPropRecord();">
+			<option></option>
+		</select>
+	</form><br><br>
+
+	<table>
+	<tr>
+			<th><u>Personal Record</u></th>
+			<th><u>Proposal Record</u></th>
+	</tr>
+	<tr>
+		<td id="personalRecordParagraph"></td>
+		<td id="propRecordParagraph"></td>
+	</tr>
+</table>
+</body>
+<script type="text/javascript">
+let personalRecord = {}
+let propRecord = {}
+let people = {}
+let select = document.getElementById("discord");
+let propSelect = document.getElementById("prop");
+let personalRecordParagraph = document.getElementById("personalRecordParagraph");
+let propRecordParagraph = document.getElementById("propRecordParagraph")
+
+function getPersonalRecord() {
+	personalRecordParagraph.innerHTML = ""
+	for (record in personalRecord[select.value]) {
+		personalRecordParagraph.innerHTML += "Proposal " + record + ": " + personalRecord[select.value][record] + "<br>"
+	}
+}
+
+function getPropRecord() {
+	propRecordParagraph.innerHTML = ""
+	for (voteType in propRecord[propSelect.value]) {
+		s = ""
+		for (voter in propRecord[propSelect.value][voteType]) {
+			s += propRecord[propSelect.value][voteType][voter] + "<br>"
+		}
+
+		propRecordParagraph.innerHTML += "<u><b>" + voteType + " (" + propRecord[propSelect.value][voteType].length + "):</b></u><br><br>" + s + "<br>"
+	}
+}
+
+function getChamberRecord() {
+	personalRecordParagraph.innerHTML = ""
+	propRecordParagraph.innerHTML = ""
+
+	while (select.children.length > 1) {
+			select.children[1].remove()
+	}
+
+	propSelect = document.getElementById("prop");
+	while (propSelect.children.length > 1) {
+			propSelect.children[1].remove()
+	}
+
+	personalRecord = {}
+	propRecord = {}
+
+	var xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+			var lines = xhttp.responseText.split("\n")
+			for (var line in lines) {
+				lineSplit = lines[line].split(",")
+				if (lineSplit[0] in personalRecord) {
+					personalRecord[lineSplit[0]][lineSplit[2]] = lineSplit[1]
+				}
+				else {
+					personalRecord[lineSplit[0]] = {}
+					personalRecord[lineSplit[0]][lineSplit[2]] = lineSplit[1]
+				}
+
+				if (lineSplit[2] in propRecord) {
+					if (lineSplit[1] in propRecord[lineSplit[2]]) {
+						propRecord[lineSplit[2]][lineSplit[1]].push(lineSplit[0])
+					}
+					else {
+						propRecord[lineSplit[2]][lineSplit[1]] = []
+						propRecord[lineSplit[2]][lineSplit[1]].push(lineSplit[0])
+					}
+				} else {
+					propRecord[lineSplit[2]] = {}
+					propRecord[lineSplit[2]][lineSplit[1]] = []
+					propRecord[lineSplit[2]][lineSplit[1]].push(lineSplit[0])
+				}
+			}
+			var people = Object.keys(personalRecord).sort()
+			for (var person in people) {
+				var opt = document.createElement("option");
+				opt.value = people[person]
+				opt.innerHTML = people[person]
+				select.appendChild(opt)
+			}
+			var props = Object.keys(propRecord).sort()
+			for (var prop in props) {
+				var opt = document.createElement("option");
+				opt.value = props[prop]
+				opt.innerHTML = props[prop]
+				document.getElementById("prop").appendChild(opt)
+			}
+		}
+	};
+	xhttp.open("GET", document.getElementById("chamber").value + "VotingRecord.csv", true);
+	xhttp.send();
+}
+</script>
+</html>
